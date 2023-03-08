@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,15 +8,72 @@
     <title>Document</title>
 </head>
 <style>
-    td{
-        background-color: #993738;
-        
+    table,
+    th,
+    td {
+        border: 1px solid #993738;
+        border-collapse: collapse;
     }
-    table{
-            border-collapse:collapse;     
+
+    tr td:last-child {
+        text-align: right;
+    }
+
+    tr th:last-child {
+        text-align: right;
+    }
+
+    tr th:first-child{
+            text-align: left;
         }
+
+    .chan {
+        background-color: gainsboro;
+    }
 </style>
+
 <body>
-    
+    <table style="width: 22%;">
+        <caption style="color: #993738; margin-bottom: 20px; font-size:large;">
+            <B>Exercise example
+
+            </B>
+        </caption>
+        <p></p>
+        <tr>
+            <th style="color: white; background-color:#993738">Region</th>
+            <th style="color: white; background-color:#993738">Percentage</th>
+        </tr>
+        <tr>
+            <td class="chan">New England</td>
+            <td class="chan">12%</td>
+        </tr>
+        <tr>
+            <td>Mid-Atlantic</td>
+            <td>19%</td>
+        </tr>
+        <tr>
+            <td class="chan">South and Puerto Rico</td>
+            <td class="chan">15%</td>
+        </tr>
+        <tr>
+            <td>Midwest and Plains States</td>
+            <td>12%</td>
+        </tr>
+        <tr>
+            <td class="chan">Southwest and Mountain</td>
+            <td class="chan">10%</td>
+        </tr>
+        <tr>
+            <td>West, Alaska, and Hawaii</td>
+            <td>20%</td>
+        </tr>
+        <tr>
+            <td class="chan">Abroad</td>
+            <td class="chan">13%</td>
+        </tr>
+    </table>
+
 </body>
+
 </html>
