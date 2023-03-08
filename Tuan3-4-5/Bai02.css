@@ -1,0 +1,53 @@
+#style {
+    text-shadow: 0 3px 1px #85c226,
+        -3px -3px 1px #fe2192,
+        3px -3px 1px #f7c200;
+}
+#style2 {
+    text-shadow: 0 0 0  #731f58;
+    background: #c162a3 10px;
+    color:  #731f58;
+}
+
+#style3 {
+    text-shadow: 0px -8px 0 #fe2192;
+}
+
+#style4{
+	position: relative;
+	font-weight: bold;
+	color:orange;
+}
+#style4 span{
+    position:absolute;
+    display:block;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    z-index: 21;
+    background:url('https://www.entheosweb.com/tutorials/css/images/text_effects/glossy.png');
+} 
+
+#style5{
+	position:relative;
+	font-weight: bold;
+	color:red;
+	background: #000;
+}
+#style5 span{
+    position:absolute;
+    display:block;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    z-index: 21;
+    background:url('https://www.entheosweb.com/tutorials/css/images/text_effects/grunge.png');
+} 
+
+#style6 {
+    text-shadow: 0 0 7px #1E90FF;
+    background: #000000;
+    color: #1E90FF;
+}
