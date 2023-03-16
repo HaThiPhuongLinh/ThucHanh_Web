@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+        nav {
+            background: rgb(47, 48, 54);
+        }
+
+        ul {
+            display: flex;
+            padding: 0;
+        }
+
+        ul li {
+            list-style-type: none;
+            /* bỏ dấu chấm mặc định của li */
+            /* kẻ đường bên trái và bên phải của li */
+            border-right: 1px solid white;
+        }
+
+        ul li a {
+            display: block;
+            padding: 0 20px;
+            line-height: 50px;
+            color: #f1f2f3;
+            text-decoration: none;
+        }
+
+        ul li:hover>a {
+            background: rgb(144, 238, 144);
+        }
+
+        li a:hover {
+            color: white;
+            background: rgb(25, 197, 137);
+        }
+
+        li ul li a {
+            color: black;
+        }
+
+        li ul li:hover>a {
+            background: rgb(25, 197, 137);
+        }
+
+        /*menu con*/
+        /*Ẩn các menu con cấp 1,2,3*/
+        nav li ul {
+            display: none;
+            position: absolute;
+        }
+
+        li>ul li {
+            border: none;
+            background: gainsboro;
+            text-align: left;
+        }
+
+        /*khi hover thì hiện menu con*/
+        li:hover ul {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Introdution >></a></li>
+            <li><a href="#">Portfolio >></a>
+                <ul>
+                    <li><a href="#">Photography</a></li>
+                    <li><a href="#">Web & User Interface Design</a></li>
+                    <li><a href="#">Illustration</a></li>
+                </ul>
+            </li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>
